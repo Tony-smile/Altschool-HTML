@@ -1,0 +1,181 @@
+@import url("./reset.css"); 
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    background-color: #007BFF;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 15px;
+}
+.right-section li{
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    margin-top: 20px;
+}
+/* Center the main container */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 30px;
+
+   
+    
+}
+
+/* Left Section (Image & Footer) */
+.left-section {
+    width: 60%;
+    max-width: 650px;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+    background: #fff9f4;
+}
+
+.left-section img {
+    width: 500px;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.left-section h1 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Right Section (Form) */
+.right-section {
+    position: relative;
+    width: 60%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+/* Form Groups */
+.form-group {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ebeaea;
+    border-radius: 5px;
+}
+.form-group input:focus,
+.form-group select:focus{
+    border: 1px solid #007BFF;
+}
+
+/* Full-width elements */
+.full-width {
+    width: 100%;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+    label{
+        text-align: left;
+        padding-left: 10px;
+    }
+}

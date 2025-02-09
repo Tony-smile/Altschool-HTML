@@ -1,0 +1,92 @@
+
+@import url("./reset.css"); 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background: #ff8800;
+    color: white;
+}
+
+.header-title {
+    margin: 0;
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Table Section */
+.table-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.table-title {
+    text-align: center;
+    color: #007BFF;
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table-caption {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.table-header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.school-name, .course-name {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.school-name {
+    font-weight: bold;
+    background: #f0f8ff;
+}
+
+.course-name {
+    background: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .course-table {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,151 @@
+@import url("./reset.css"); 
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navigation */
+.header {
+    background: #007BFF;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-left: 5px solid #007BFF;
+    border-radius: 5px;
+}
+
+.section h2 {
+    color: #007BFF;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Goals List */
+.goal-list {
+    list-style: square;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.goal-list li {
+    margin-bottom: 10px;
+}
+
+/* Scroll Up Button */
+.scroll-up {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.scroll-up a {
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.scroll-up a:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #007BFF;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 0.95rem;
+    }
+
+    .goal-list {
+        font-size: 0.95rem;
+    }
+
+    .scroll-up a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}

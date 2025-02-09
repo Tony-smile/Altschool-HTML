@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/styles/ass2Media.css">
+    <title>About Me with Media</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Exploring All Media Elements in HTML</h1>
+    </header>
+
+    <main class="main-content">
+
+        <!-- Responsive Image -->
+        <section class="media-section">
+            <h2>Responsive Image</h2>
+            <picture class="responsive-picture">
+                <source srcset="images/me-laptop.jpg" media="(min-width: 1024px)">
+                <source srcset="images/me-tablet.jpg" media="(min-width: 768px)">
+                <img class="img-responsive" src.jpg" alt="A picture of me">
+            </picture>
+        </section>
+        <div class="svgs">
+            
+        </div>
+
+        <!-- Canvas for Drawing -->
+        <section class="media-section">
+            <h2>Canvas for Drawing</h2>
+            <canvas id="myCanvas" class="canvas-draw" width="200" height="200"></canvas>
+        </section>
+
+        <!-- Video Element -->
+        <section class="media-section">
+            <h2>My Introduction Video</h2>
+            <video class="video-element" controls width="600">
+                <source src="videos/introduction.mp4" type="video/mp4">
+                <source src="videos/introduction.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Video with Captions -->
+        <section class="media-section">
+            <h2>Video with Captions</h2>
+            <video class="video-element" controls width="600">
+                <source src="videos/sample.mp4" type="video/mp4">
+                <track src="captions/sample.vtt" kind="subtitles" srclang="en" label="English">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Audio Element -->
+        <section class="media-section">
+            <h2>My Favorite Podcast</h2>
+            <audio class="audio-element" controls>
+                <source src="audio/podcast.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+
+        <!-- Embedded YouTube Video -->
+        <section class="media-section">
+            <h2>Embedded YouTube Video</h2>
+            <iframe class="iframe-video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        </section>
+
+        <!-- Embedded PDF using Object -->
+        <section class="media-section">
+            <h2>Embedded PDF</h2>
+            <object class="pdf-embed" data="documents/sample.pdf" type="application/pdf" width="600" height="400">
+                <p>Your browser does not support PDFs. <a href="documents/sample.pdf">Download it here</a>.</p>
+            </object>
+        </section>
+
+        <!-- Embedded Google Maps -->
+        <section class="media-section">
+            <h2>Google Maps Embed</h2>
+            <iframe class="iframe-map" width="600" height="400" src="https://www.google.com/maps/embed/v1/place?q=AltSchool%20Africa&key=YOUR_GOOGLE_MAPS_API_KEY"></iframe>
+        </section>
+
+    </main>
+
+    <script>
+        // Simple drawing on Canvas
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(50, 50, 100, 100);
+    </script>
+
+</body>
+</body>
+</html>
