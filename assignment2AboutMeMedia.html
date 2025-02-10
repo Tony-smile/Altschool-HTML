@@ -18,27 +18,66 @@
         <section class="media-section">
             <h2>Responsive Image</h2>
             <picture class="responsive-picture">
-                <source srcset="images/me-laptop.jpg" media="(min-width: 1024px)">
-                <source srcset="images/me-tablet.jpg" media="(min-width: 768px)">
-                <img class="img-responsive" src.jpg" alt="A picture of me">
+                <source srcset="Assets/TEESMILE (2).jpg" media="(min-width: 1024px)">
+                <source srcset="Assets/TEESMILE (2).jpg" media="(min-width: 768px)">
+                <img class="img-responsive" src="Assets/TEESMILE (3).jpg" alt="A picture of me">
             </picture>
         </section>
+
+        <section class="media-section">
+            <h2>My Graphics</h2>
+            <div class="image-grid">
+                <img src="/Assets/AZ Housing3.jpg" alt="Image 1">
+                <img src="/Assets/Beulah Estates2.jpg" alt="Image 2">
+                <img src="/Assets/Charlie Gadgets.jpg" alt="Image 3">
+                <img src="/Assets/Diamond Homes.jpg" alt="Image 4">
+                <img src="/Assets/HNW YPG.jpg" alt="Image 5">
+                <img src="/Assets/IMG-20240816-WA0023.jpg" alt="Image 6">
+                <img src="/Assets/IMG_20240823_120739_559.jpg" alt="Image 7">
+                <img src="/Assets/Pearl Dove Estate 2.jpg" alt="Image 8">
+                <img src="/Assets/PFP-1.jpg" alt="Image 9">
+                <img src="/Assets/Toshel Homes2.jpg" alt="Image 10">
+            </div>
+        </section>
+
         <div class="svgs">
-            
+            <!-- Circle Section -->
+<section class="media-section">
+    <h2>Scalable Vector Graphics (SVG) - Circle</h2>
+    <svg class="svg-graphic" width="200" height="200">
+        <circle cx="100" cy="100" r="80" stroke="rgb(245, 127, 48" stroke-width="8" fill="none"></circle>
+    </svg>
+</section>
+
+<!-- Square Section -->
+<section class="media-section">
+    <h2>Scalable Vector Graphics (SVG) - Square</h2>
+    <svg class="svg-graphic" width="200" height="200">
+        <rect x="30" y="30" width="140" height="140" stroke="rgb(245, 127, 48" stroke-width="8" fill="none"></rect>
+    </svg>
+</section>
+
+<!-- Triangle Section -->
+<section class="media-section">
+    <h2>Scalable Vector Graphics (SVG) - Triangle</h2>
+    <svg class="svg-graphic" width="200" height="200">
+        <polygon points="100,20 30,180 170,180" stroke="rgb(245, 127, 48" stroke-width="8" fill="none"></polygon>
+    </svg>
+</section>
         </div>
 
         <!-- Canvas for Drawing -->
         <section class="media-section">
-            <h2>Canvas for Drawing</h2>
-            <canvas id="myCanvas" class="canvas-draw" width="200" height="200"></canvas>
+            <h2>Canvas for drawings</h2>
+            <canvas id="myCanvas" class="canvas-draw" width="800" height="auto"></canvas>
         </section>
 
         <!-- Video Element -->
         <section class="media-section">
             <h2>My Introduction Video</h2>
             <video class="video-element" controls width="600">
-                <source src="videos/introduction.mp4" type="video/mp4">
-                <source src="videos/introduction.webm" type="video/webm">
+                <source src="https://drive.google.com/file/d/1d7bQAfV4bfLxtWYAdmeEI-0LUNfmbSMF/preview" type="video/mp4">
+                <source src="https://drive.google.com/uc?export=download&id=1d7bQAfV4bfLxtWYAdmeEI-0LUNfmbSMF" type="video/webm">
                 Your browser does not support the video tag.
             </video>
         </section>
@@ -47,17 +86,17 @@
         <section class="media-section">
             <h2>Video with Captions</h2>
             <video class="video-element" controls width="600">
-                <source src="videos/sample.mp4" type="video/mp4">
-                <track src="captions/sample.vtt" kind="subtitles" srclang="en" label="English">
+                <source src="https://youtu.be/LiomFigpmrE?si=TXoA14OTexbzhTDy" type="video/mp4">
+                <track src="https://youtu.be/LiomFigpmrE?si=TXoA14OTexbzhTDy" kind="subtitles" srclang="en" label="English">
                 Your browser does not support the video tag.
             </video>
         </section>
 
         <!-- Audio Element -->
         <section class="media-section">
-            <h2>My Favorite Podcast</h2>
+            <h2>My Favorite Quote</h2>
             <audio class="audio-element" controls>
-                <source src="audio/podcast.mp3" type="audio/mpeg">
+                <source src="/Assets/voice_preview.mp3" type="audio/mpeg">
                 Your browser does not support the audio tag.
             </audio>
         </section>
@@ -71,15 +110,15 @@
         <!-- Embedded PDF using Object -->
         <section class="media-section">
             <h2>Embedded PDF</h2>
-            <object class="pdf-embed" data="documents/sample.pdf" type="application/pdf" width="600" height="400">
-                <p>Your browser does not support PDFs. <a href="documents/sample.pdf">Download it here</a>.</p>
+            <object class="pdf-embed" data="/Assets/page 2.pdf" type="application/pdf" width="600" height="1024">
+                <p>Your browser does not support PDFs. <a href="/Assets/page 2.pdf">Download it here</a>.</p>
             </object>
         </section>
 
         <!-- Embedded Google Maps -->
         <section class="media-section">
-            <h2>Google Maps Embed</h2>
-            <iframe class="iframe-map" width="600" height="400" src="https://www.google.com/maps/embed/v1/place?q=AltSchool%20Africa&key=YOUR_GOOGLE_MAPS_API_KEY"></iframe>
+            <h2>YouTube Embed</h2>
+            <iframe class="iframe-youtube" max-width="600" height="400" src="https://drive.google.com/file/d/1d7bQAfV4bfLxtWYAdmeEI-0LUNfmbSMF/preview"></iframe>
         </section>
 
     </main>
@@ -88,7 +127,7 @@
         // Simple drawing on Canvas
         const canvas = document.getElementById('myCanvas');
         const ctx = canvas.getContext('2d');
-        ctx.fillStyle = 'blue';
+        ctx.fillStyle = 'rgb(245, 127, 48';
         ctx.fillRect(50, 50, 100, 100);
     </script>
 
